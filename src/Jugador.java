@@ -33,7 +33,6 @@ public class Jugador {
                 tempCarta = carta;
             }
         }
-        // return cartas.stream().max(Comparator.comparing(v -> v.getValor())).get();
         return tempCarta;
     }
 
