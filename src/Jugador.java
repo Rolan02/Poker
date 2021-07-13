@@ -25,6 +25,11 @@ public class Jugador {
         // Debe retornar una lista de 5 cartas aleatorias. ///BRYAN
     }
 
+    /**
+     * 
+     * @param List cartas
+     * @return carta de valor mayor en la lista
+     */
     public Carta cartaMayor(List<Carta> cartas) {
         // Debe devolder la carta mas alta de la lista. ///SERGIO
         Carta tempCarta = cartas.get(0);
