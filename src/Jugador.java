@@ -26,7 +26,7 @@ public class Jugador {
         //Debe devolder la carta mas alta de la lista. ///SERGIO
     }
     public int parCarta(List Cartas){
-        //Buscar si hay un par en la Lista de cartas y devuleve el valor.  ///ROLANDO
+      //  aqui entrara mi tranajo
     }
 
 }
