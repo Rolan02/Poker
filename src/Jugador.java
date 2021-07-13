@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Comparator;
 
 public class Jugador {
     private String jugador;
@@ -19,14 +20,25 @@ public class Jugador {
     public void setCartas(List cartas) {
         this.cartas = cartas;
     }
-    public List<Carta> generarMano(){
-        //Debe retornar una lista de  5 cartas aleatorias. ///BRYAN
+
+    public List<Carta> generarMano() {
+        // Debe retornar una lista de 5 cartas aleatorias. ///BRYAN
     }
-    public Carta cartaMayor(List cartas){
-        //Debe devolder la carta mas alta de la lista. ///SERGIO
+
+    public Carta cartaMayor(List<Carta> cartas) {
+        // Debe devolder la carta mas alta de la lista. ///SERGIO
+        Carta tempCarta = cartas.get(0);
+        for (var carta : cartas) {
+            if (carta.getValor() > tempCarta.getValor()) {
+                tempCarta = carta;
+            }
+        }
+        // return cartas.stream().max(Comparator.comparing(v -> v.getValor())).get();
+        return tempCarta;
     }
-    public int parCarta(List Cartas){
-        //Buscar si hay un par en la Lista de cartas y devuleve el valor.  ///ROLANDO
+
+    public int parCarta(List Cartas) {
+        // Buscar si hay un par en la Lista de cartas y devuleve el valor. ///ROLANDO
     }
 
 }

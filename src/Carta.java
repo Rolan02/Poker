@@ -3,6 +3,11 @@ public class Carta {
     private Tipo tipo;
     private int valor;
 
+    public Carta(Tipo tipo, int valor) {
+        this.tipo = tipo;
+        this.valor = valor;
+    }
+
     public Tipo getTipo() {
         return tipo;
     }

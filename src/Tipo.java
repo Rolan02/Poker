@@ -1,6 +1,3 @@
 public enum Tipo {
-    ESPADA,
-    CORAZON,
-    TREVOL,
-    DIAMANTE
+    ESPADA, CORAZON, TREBOL, DIAMANTE
 }
