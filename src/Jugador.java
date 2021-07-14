@@ -20,6 +20,11 @@ public class Jugador {
     public void setCartas(List cartas) {
         this.cartas = cartas;
     }
+
+    /**
+     *
+     * @return retornara una mano con 5 valores aleatorios
+     */
     public List<Carta> generarMano(){
         List mano = new ArrayList();
         for (int i = 0; i < 4; i++) {
