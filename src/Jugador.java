@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Jugador {
@@ -20,13 +21,23 @@ public class Jugador {
         this.cartas = cartas;
     }
     public List<Carta> generarMano(){
-        //Debe retornar una lista de  5 cartas aleatorias. ///BRYAN
+        List mano = new ArrayList();
+        for (int i = 0; i < 4; i++) {
+            mano.add(new Carta(Tipo.CORAZON,(int)Math.random()*14));
+            //print
+        }
+        return mano;
+        // Borrar el la clase tipo
+        // Array[corazon,espada......] 1 - 3
+        //array.get(math.randow()*5)
+      //  CORAZON 4
+        //
     }
+
+
     public Carta cartaMayor(List cartas){
-        //Debe devolder la carta mas alta de la lista. ///SERGIO
     }
     public int parCarta(List Cartas){
-        //Buscar si hay un par en la Lista de cartas y devuleve el valor.  ///ROLANDO
     }
 
 }
