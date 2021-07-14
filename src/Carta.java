@@ -9,7 +9,11 @@ public class Carta {
     }
 
 
+    }
 
+    public void setTipo(Tipo tipo) {
+        this.tipo = tipo;
+    }
 
     public int getValor() {
         return valor;
