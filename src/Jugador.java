@@ -28,10 +28,18 @@ public class Jugador {
     public List<Carta> generarMano(){
         List mano = new ArrayList();
         for (int i = 0; i < 4; i++) {
-            mano.add(new Carta(Tipo.CORAZON,(int)Math.random()*14));
+            mano.add(array.get((int)math.randow()*5),(int)Math.random()*14));
+
+            System. out. println(mano);
             //print
         }
         return mano;
+        // nose si estoy usando bien los arreglos
+        int Array[] = {corazon,trebol,diamante,espada};
+        for (int i = 1; i < 3; i++) {
+
+        }
+
         // Borrar el la clase tipo
         // Array[corazon,espada......] 1 - 3
         //array.get(math.randow()*5)
