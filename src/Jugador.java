@@ -22,7 +22,6 @@ public class Jugador {
         this.cartas = cartas;
     }
 
-
     /**
      *
      * @return retornara una mano con 5 valores aleatorios
@@ -48,7 +47,6 @@ public class Jugador {
       //  CORAZON 4
         //
     }
-
 
     public List<Carta> generarMano() {
         // Debe retornar una lista de 5 cartas aleatorias. ///BRYAN
