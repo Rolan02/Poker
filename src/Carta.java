@@ -1,6 +1,6 @@
 public class Carta {
 
-    private Tipo tipo;
+
     private int valor;
 
     public Carta(Tipo tipo, int valor) {
@@ -8,8 +8,7 @@ public class Carta {
         this.valor = valor;
     }
 
-    public Tipo getTipo() {
-        return tipo;
+
     }
 
     public void setTipo(Tipo tipo) {
