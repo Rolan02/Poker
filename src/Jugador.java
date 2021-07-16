@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Comparator;
 
@@ -70,6 +71,20 @@ public class Jugador {
 
     public int parCarta(List Cartas) {
         // Buscar si hay un par en la Lista de cartas y devuleve el valor. ///ROLANDO
+    }
+
+    /**
+     * 
+     * @param mano  que se va a ordenar
+     * @param orden que se va a aplicar true ascendente, false descendiente
+     * @return mano con el orden establecido
+     */
+    public List<Carta> ordenarMano(List<Carta> mano, Boolean orden) {
+
+        Comparator<Carta> compararPorNumero = (Carta c1, Carta c2) -> Integer.valueOf(c1.getValor())
+                .compareTo(c2.getValor());
+        Collections.sort(mano, (orden) ? compararPorNumero : compararPorNumero.reversed());
+        return mano;
     }
 
 }
